@@ -102,7 +102,7 @@
                                         <div class="row invoice-info">
                                             <div class="col-12 invoice-col">
                                                 <h4>
-                                                    <span> <img src="<?= base_url('assets/'); ?>dist/img/logoSIA.png" width="40"></span> Apotek Ajwa
+                                                    <span> <img src="<?= base_url('assets/'); ?>dist/img/logoSIA.png" width="40"></span> Apotek Kiya Medika
                                                     <!-- <small class="float-right"><?= date("d/m/Y"); ?></small> -->
                                                 </h4>
                                             </div>
@@ -112,9 +112,10 @@
                                         <div class="row invoice-info">
                                             <div class="col-sm-4 invoice-col">
                                                 <address>
-                                                    <strong>Jl. Daeng Pasau No. 9A Kel. Tahoa</strong><br>
-                                                    No. Hp: 085241804046<br>
-                                                    Email: rahmat.nur515@gmail.com
+                                                    <p>
+                                                        Address : Jl. Jend. Ahmad Yani, Pondambea</br>
+                                                        Phone : 0853-4269-7757</br>
+                                                    </p>
                                                 </address>
                                             </div>
                                         </div>

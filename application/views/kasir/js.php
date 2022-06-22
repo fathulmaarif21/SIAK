@@ -59,7 +59,8 @@
      }
  </script>
  <script>
-     var no = 1;
+     var no = 1,
+         dataPrint;
      $(document).ready(function() {
 
 
@@ -318,6 +319,17 @@
                                      this.reset();
                                  });
                                  $('#totalTagihan').text('0');
+
+                                 dataPrint = {
+                                     'order_id': res.id_nota,
+                                     'tagihan_simpan': tagihan_simpan,
+                                     'bayar_simpan': bayar_simpan,
+                                     'kembalian_simpan': kembalian_simpan,
+                                     'arrnama': arrnama,
+                                     'arr_qty': arr_qty,
+                                     'arr_harga': arr_harga,
+                                     'arr_subtotal': arr_subtotal,
+                                 };
                              }
                          },
                          error: function(xhr, status, error) {
@@ -368,7 +380,32 @@
      }
 
      function klikbtnPrint() {
-         window.print();
+         //  window.print();
          $('#success_tic').modal('hide');
+
+         $.ajax({
+             type: "POST",
+             url: "<?= base_url('Cetak/cetak'); ?>",
+             data: dataPrint,
+             dataType: "JSON",
+             success: function(res) {
+                 if (res.code != "00") {
+                     Swal.fire(
+                         'Error!',
+                         "gagal cetak Nota",
+                         'error'
+                     )
+                 }
+             },
+             error: function(xhr, status, error) {
+                 console.log(xhr.responseText);
+                 Swal.fire(
+                     'Error!',
+                     xhr.responseText,
+                     'error'
+                 )
+                 //  window.location.reload();
+             }
+         });
      }
  </script>

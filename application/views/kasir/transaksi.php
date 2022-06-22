@@ -78,10 +78,10 @@
 <div id="div_cetak" style="visibility: hidden;">
 
     <style>
-        #ticket {
+        /* #ticket {
             font-size: 5px;
             font-family: 'Times New Roman';
-        }
+        } */
 
         /* #ticket table {
             border-top: 1px solid black;
@@ -126,13 +126,14 @@
             /* background-size: 60px 60px; */
         }
 
+        /* 
         #ticket table {
-            /* border-style: double none double none; */
+            border-style: double none double none;
             text-transform: uppercase;
             white-space: nowrap;
             font-weight: bold;
             border-collapse: collapse;
-        }
+        } */
 
         .center_logo {
             padding-left: 100px;
@@ -152,9 +153,9 @@
             <img src="http://localhost/SIA/assets/dist/img/logoSIA.png" width="10%" alt="Logo">
         </div>
         <p style="padding-left:60px;">Apotek Kiya Medika</p>
-        <div style="font-size: 13px;">
+        <div style="font-size: 15px;">
             <p>
-                Address : Jl. Jend. Ahmad Yani, Pondambea</br>
+                Address : Jl. Jend. Ahmad Yani , <br> Pondambea</br>
                 Phone : 0853-4269-7757</br>
             </p>
             <hr style="max-width: 220px; margin-left:0; border-top: 1px dashed">
@@ -165,7 +166,7 @@
             </p>
             <hr style="max-width: 220px; margin-left:0; border-top: 1px dashed">
         </div>
-        <div style="font-size: 10px;">
+        <div style="font-size: 15px;">
             <table style=" text-transform: uppercase; font-weight: bold; border-collapse: collapse; " width="100%" id="detaillist_nota">
                 <tbody>
                     <tr>
