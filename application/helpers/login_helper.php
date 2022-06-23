@@ -22,3 +22,12 @@ function rupiah($angka)
     $hasil_rupiah = "Rp " . number_format($angka, 0, ',', '.');
     return $hasil_rupiah;
 }
+
+function GetMACAdd()
+{
+    ob_start();
+    system('getmac');
+    $Content = ob_get_contents();
+    ob_clean();
+    return (substr($Content, strpos($Content, '\\') - 20, 17)) == '8C-8C-AA-B5-48-9F' ? true : false;
+}

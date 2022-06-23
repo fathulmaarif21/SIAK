@@ -112,7 +112,7 @@
     <div class="col-md-5">
         <div class="card card-info">
             <div class="card-header">
-                <h3 class="card-title"><i class="fas fa-chart-pie"></i> <b>Top 5 (<?= date("F Y"); ?>)</b></h3>
+                <h3 class="card-title"><i class="fas fa-chart-pie"></i> <b>Top 7 (<?= date("F Y"); ?>)</b></h3>
             </div>
             <div id="chartdiv">
             </div>

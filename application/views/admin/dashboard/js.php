@@ -85,7 +85,7 @@
                         <td>${data[index].no_batch}</td>
                         <td>${data[index].tgl_expired}</td> 
                         <td>${data[index].stok}</td>
-                        <td><button type="button" onclick="deleteExp(${data[index].id})" class="btn btn-danger btn-sm">Danger</button></td>
+                        <td><button type="button" onclick="deleteExp(${data[index].id})" class="btn btn-danger btn-sm">Delete</button></td>
                     </tr>`);
                  }
 

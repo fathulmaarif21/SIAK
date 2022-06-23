@@ -6,14 +6,12 @@ class Cetak extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        // $this->load->library('session');
-        // $this->load->model('UserModel');
-        // $this->load->model('TriggerModel');
-        // is_logged_in();
         $this->load->helper('print');
+        date_default_timezone_set('Asia/Ujung_Pandang');
     }
     public function cetak()
     {
+
         $res = [
             "code" => "00",
             "msg" => "success"
