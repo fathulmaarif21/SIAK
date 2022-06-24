@@ -82,10 +82,11 @@ class TriggerModel extends CI_Model
     {
         $this->db->trans_start();
         // TRIGGER DI DETAIL PEMBELIAN
-        $this->db->query("DROP TRIGGER IF EXISTS kurangStokBfUpdate");
-        $this->db->query("DROP TRIGGER IF EXISTS tambahStokAfterUpdate");
+        // $this->db->query("DROP TRIGGER IF EXISTS kurangStokBfUpdate");
+        // $this->db->query("DROP TRIGGER IF EXISTS tambahStokAfterUpdate");
         $this->db->query("DROP TRIGGER IF EXISTS tambah_stok");
-        $this->db->query("DROP TRIGGER IF EXISTS kurang_stok_hapus");
+        $this->db->query("DROP TRIGGER IF EXISTS insert_tbl_exp");
+        // $this->db->query("DROP TRIGGER IF EXISTS kurang_stok_hapus");
 
         // TRIGGER DI DETAIL TRANSAKSI PENJUALAN
         $this->db->query("DROP TRIGGER IF EXISTS hapus_trx_restorestok");

@@ -62,7 +62,8 @@ class Admin extends CI_Controller
             "kemasan" => $kemasan,
             "prinsipal" => $prinsipal,
             "harga_jual" => $harga_jual,
-            "stok" => $stok
+            "stok" => $stok,
+            "user_update" => $this->session->userdata('user_id')
         ];
         $this->ObatModel->updateObat($kd_obat, $update);
         echo json_encode(array("status" => TRUE));
@@ -82,7 +83,8 @@ class Admin extends CI_Controller
             'kemasan' => $this->input->post('addkemasan'),
             'prinsipal' => $this->input->post('addprinsipal'),
             'harga_jual' => $this->input->post('addHargaJual'),
-            'stok' => 0
+            'stok' => 0,
+            'user_input' => $this->session->userdata('user_id')
         ];
 
         $this->ObatModel->addObat($ObatModel);
@@ -366,6 +368,7 @@ class Admin extends CI_Controller
                 "jml_harga" => $jml_harga,
                 "ppn_persen" => $ppn_persen,
                 "ppn" => $ppn,
+                "user_input" => $this->session->userdata('user_id')
             ];
             $detailTrx = [];
             for ($i = 0; $i < count($arr_kd_obat); $i++) {
