@@ -10,7 +10,7 @@ class Cek extends CI_Controller
 
     public function index()
     {
-        if (GetMACAdd()) {
+        if (cekHost()) {
             redirect('login');
         } else {
             echo "error : anda tidak memiliki akses ke aplikasi";

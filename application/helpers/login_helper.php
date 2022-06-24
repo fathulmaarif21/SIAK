@@ -31,3 +31,8 @@ function GetMACAdd()
     ob_clean();
     return (substr($Content, strpos($Content, '\\') - 20, 17)) == '8C-8C-AA-B5-48-9F' ? true : false;
 }
+
+function cekHost()
+{
+    return (gethostname()) == 'DESKTOP-AEGLGP4' ? true : false;
+}
