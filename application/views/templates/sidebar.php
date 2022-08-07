@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar elevation-4 sidebar-light-lime">
     <a href="" class="brand-link navbar-light">
-        <img src="<?= base_url('assets/'); ?>dist/img/logoSIA.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-2" style="opacity: .8">
+        <img src="<?= base_url('assets/'); ?>dist/img/KIYAPNG.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-2" style="opacity: .8">
         <span class="brand-text font-weight-light"><b>Apotek Kiya Medika</b></span>
     </a>
     <!-- Sidebar -->
